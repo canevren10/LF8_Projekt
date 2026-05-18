@@ -67,10 +67,10 @@
 - [x] Code der Erweiterung kommentieren.
 - [x] Erweiterung testen.
 
-- [ ] 1.7 Projektdokumentation erstellen.
-- [ ] Zeitaufwand für jeden Meilenstein tabellarisch notieren.
-- [ ] Probleme und Lösungen kurz aufschreiben.
-- [ ] Screenshots wichtiger Ergebnisse einfügen.
+- [x] 1.7 Projektdokumentation erstellen (`1.7_Projektdokumentation.md`).
+- [x] Zeitaufwand für jeden Meilenstein tabellarisch notieren (ca. 16 Std. gesamt).
+- [x] Probleme und Lösungen kurz aufschreiben (QR-Code-Format, Combobox-Problem).
+- [ ] Screenshots wichtiger Ergebnisse einfügen (Platzhalter gesetzt, Bilder noch einfügen).
 - [ ] Dokumentation als PDF vorbereiten.
 
 ## Phase 3: Hauptprogramm (Tkinter GUI und Integrationsaufgaben 2.1 bis 2.3)
