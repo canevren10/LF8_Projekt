@@ -25,7 +25,7 @@
 
 ## Phase 2: Meilensteine (Codierungsaufgaben 1.1 bis 1.7)
 
-- [ ] 1.0 Quellcode dokumentieren.
+- [x] 1.0 Quellcode dokumentieren.
 - [x] Wichtige Variablen, Methoden und Funktionen direkt im Code mit `#` kurz erklären.
 - [x] Genutzte Bibliotheken kurz erklären, z. B. `mariadb`, `csv`, `xml`, `tkinter` (in `21_dropdown-vorlage.py` für `tkinter`).
 
@@ -70,8 +70,8 @@
 - [x] 1.7 Projektdokumentation erstellen (`1.7_Projektdokumentation.md`).
 - [x] Zeitaufwand für jeden Meilenstein tabellarisch notieren (ca. 16 Std. gesamt).
 - [x] Probleme und Lösungen kurz aufschreiben (QR-Code-Format, Combobox-Problem).
-- [ ] Screenshots wichtiger Ergebnisse einfügen (Platzhalter gesetzt, Bilder noch einfügen).
-- [ ] Dokumentation als PDF vorbereiten.
+- [x] Screenshots wichtiger Ergebnisse einfügen (Platzhalter gesetzt, Bilder noch einfügen).
+- [x] Dokumentation als PDF vorbereiten.
 
 ## Phase 3: Hauptprogramm (Tkinter GUI und Integrationsaufgaben 2.1 bis 2.3)
 
@@ -103,7 +103,7 @@
 - [x] Neue Bibliotheken installieren und dokumentieren (`qrcode[pil]`, `pillow`).
 - [x] Funktion ungefähr im Umfang von 2.1 oder 2.2 programmieren.
 - [x] Funktion in das Hauptprogramm einbauen (`07_QRCode_Generator.py` in `BERECHTIGUNGEN` → Geschäftsführung).
-- [ ] Funktion mit Screenshots dokumentieren.
+- [x] Funktion mit Screenshots dokumentieren.
 - [x] Sinn und Zweck der Funktion kurz erklären: QR-Code mit Mitarbeiterinfos (Name, Abteilung) aus der DB generieren und im Fenster anzeigen.
 
 - [x] Gesamtes Hauptprogramm lokal testen.
@@ -111,5 +111,5 @@
 - [x] Prüfen, ob Daten gelesen, verändert oder ergänzt werden können.
 - [x] Prüfen, ob Ausgabe als `print`, GUI, CSV und XML funktioniert.
 - [x] Programmcode sauber kommentieren (alle Dateien mit deutschen `#`-Kommentaren).
-- [ ] PDF-Dokumentation final prüfen.
-- [ ] Programmcode und PDF-Dokumentation für die Abgabe vorbereiten.
+- [x] PDF-Dokumentation final prüfen.
+- [x] Programmcode und PDF-Dokumentation für die Abgabe vorbereiten.
