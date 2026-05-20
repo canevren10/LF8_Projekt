@@ -18,10 +18,10 @@
 - [x] Projektdateien für die Meilensteine anlegen, z. B. `01_ConnectionTest.py`, `02_Print_SQL.py`, `03_DB_in_CSV.py`.
 - [x] Zugangsdaten lokal notieren: Host `localhost`, Benutzer:root, Passwort:123, Datenbankname:heiner_it.
 - [x] Erst lokal testen, bevor der Server benutzt wird.
-- [ ] Später Serverzugang nur im BYOD-WLAN testen.
-- [ ] Für Serverzugriff die IP, Benutzer `root`, Passwort und Datenbankname aus dem Lehrer-PDF nutzen.
-- [ ] Falls nötig, MariaDB auf dem Server für Remotezugriff vorbereiten: `bind-address = 0.0.0.0`.
-- [ ] Server-Datenbank importieren und mit einer einfachen SQL-Abfrage testen.
+- [x] Später Serverzugang nur im BYOD-WLAN testen.
+- [x] Für Serverzugriff die IP, Benutzer `root`, Passwort und Datenbankname aus dem Lehrer-PDF nutzen (`10.145.240.122`).
+- [x] Falls nötig, MariaDB auf dem Server für Remotezugriff vorbereiten: `bind-address = 0.0.0.0`.
+- [x] Server-Datenbank importieren und mit einer einfachen SQL-Abfrage testen.
 
 ## Phase 2: Meilensteine (Codierungsaufgaben 1.1 bis 1.7)
 
@@ -107,7 +107,7 @@
 - [x] Sinn und Zweck der Funktion kurz erklären: QR-Code mit Mitarbeiterinfos (Name, Abteilung) aus der DB generieren und im Fenster anzeigen.
 
 - [x] Gesamtes Hauptprogramm lokal testen.
-- [ ] Gesamtes Hauptprogramm mit Server-Datenbank testen.
+- [x] Gesamtes Hauptprogramm mit Server-Datenbank testen (Verbindung zu `10.145.240.122` erfolgreich).
 - [x] Prüfen, ob Daten gelesen, verändert oder ergänzt werden können.
 - [x] Prüfen, ob Ausgabe als `print`, GUI, CSV und XML funktioniert.
 - [x] Programmcode sauber kommentieren (alle Dateien mit deutschen `#`-Kommentaren).
