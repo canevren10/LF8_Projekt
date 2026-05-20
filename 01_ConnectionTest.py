@@ -7,10 +7,10 @@ import sys
 # - definiere hier die Verbindung zur Datenbank
 try:
   db = mariadb.connect(
-    host="localhost",
-    user="root",
-    password="123",
-    database="heiner_it"
+    host="10.145.240.122", #10.145.240.122 #local:localhost
+    user="root", #root #local:root
+    password="Gr3eu1H8GRyZIS", #Gr3eu1H8GRyZIS #local:123
+    database="heiner_it" #heiner_it #local:heiner_it
   )
 except mariadb.Error as e:
   print(f"Datenbankverbindung fehlgeschlagen: {e}")
