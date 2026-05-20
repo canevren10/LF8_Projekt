@@ -1,28 +1,41 @@
-##### Verbindung zur Datenbank herstellen #####
+# ==============================================================================
+# Meilenstein 1.1 – Verbindungstest zur MariaDB-Datenbank
+# Zweck: Prüft, ob Python eine Verbindung zur Datenbank aufbauen kann.
+# ==============================================================================
 
-import mariadb
-import sys
+import mariadb  # mariadb: Treiber für Verbindung zu MariaDB/MySQL-Datenbanken
+import sys      # sys: Systemfunktionen – hier für sys.exit() bei Fehler
 
-# Connect to the MySQL database 
-# - definiere hier die Verbindung zur Datenbank
-try:
-  db = mariadb.connect(
-    host="10.145.240.122", #10.145.240.122 #local:localhost
-    user="root", #root #local:root
-    password="Gr3eu1H8GRyZIS", #Gr3eu1H8GRyZIS #local:123
-    database="heiner_it" #heiner_it #local:heiner_it
-  )
-except mariadb.Error as e:
-  print(f"Datenbankverbindung fehlgeschlagen: {e}")
-  sys.exit(1)
 
-# Die Methode pürft ob eine erfolgreiche Vebrindung zur Datenbank hergesetellt werden kann.
-# Ausgabe: gibt succesfull oder fail als print-Ausgabe zurück
-def testConnection(dbc):      #dbc steht für die Datenbankverbindung die überprüft werden soll
-  # definieren sie hier die Tests und Ausgaben
-  if dbc.open:
-    print("Datenbankverbindung erfolgreich")
-  else:
-    print("Datenbankverbindung fehlgeschlagen")
-# Aufruf der Methode zum Testen der Datenbankverbindung
-testConnection(db)    
+def test_verbindung(dbc):
+    """
+    Prüft den Status einer bestehenden Datenbankverbindung.
+
+    Parameter:
+        dbc – mariadb.Connection-Objekt (die zu prüfende Verbindung)
+    Ausgabe:
+        Gibt 'erfolgreich' oder 'fehlgeschlagen' als Konsolentext aus.
+    """
+    if dbc.open:  # .open ist True, wenn die Verbindung aktiv ist
+        print("Datenbankverbindung erfolgreich")
+    else:
+        print("Datenbankverbindung fehlgeschlagen")
+
+
+if __name__ == "__main__":
+    # Verbindungsparameter zur Schuldatenbank
+    try:
+        db = mariadb.connect(
+            host="10.145.240.122",      # IP-Adresse des Schulservers
+            user="root",                # Datenbankbenutzer
+            password="Gr3eu1H8GRyZIS",  # Kennwort (nur für Schulprojekt)
+            database="heiner_it"        # Name der Datenbank
+        )
+    except mariadb.Error as e:
+        # Verbindung fehlgeschlagen – Fehlermeldung ausgeben und Programm beenden
+        print(f"Datenbankverbindung fehlgeschlagen: {e}")
+        sys.exit(1)  # Exit-Code 1 = Fehler
+
+    # Verbindungsstatus prüfen und ausgeben
+    test_verbindung(db)
+    db.close()  # Verbindung nach dem Test immer freigeben
