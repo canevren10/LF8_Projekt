@@ -27,9 +27,9 @@ def personal_laden(suchtext):
         zeilen  – Liste der Ergebniszeilen als Tupel
     """
     db = mariadb.connect(
-        host="localhost",
+        host="10.145.240.122",
         user="root",
-        password="123",
+        password="Gr3eu1H8GRyZIS",
         database="heiner_it",
     )
     try:

@@ -19,9 +19,9 @@ if __name__ == "__main__":
     # Schritt 1: Datenbankverbindung herstellen
     try:
         db = mariadb.connect(
-            host="localhost",
+            host="10.145.240.122",
             user="root",
-            password="123",
+            password="Gr3eu1H8GRyZIS",
             database="heiner_it"
         )
     except mariadb.Error as e:
